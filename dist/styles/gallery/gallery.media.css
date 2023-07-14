@@ -1,0 +1,42 @@
+@media screen and (max-width: 750px) {
+	.container__gallery__block {
+		width: 150px;
+		height: 75px;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.container__menu__title p {
+		font-size: 60px;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	.container__menu__title {
+		margin-bottom: 50px;
+	}
+
+	.container__menu__title p {
+		font-size: 48px;
+	}
+
+	.container__menu__path p {
+		font-size: 20px;
+	}
+
+	.container__menu__content p,
+	.hero {
+		font-size: 18px;
+	}
+
+	.container__menu__button {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.container__gallery__block {
+		width: 100px;
+		height: 50px;
+	}
+}

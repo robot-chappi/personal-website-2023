@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes='180x180' href="./dist/icons/apple-touch-icon.png" />
+    <link rel="icon" type='image/png' sizes="32x32" href="./dist/icons/favicon-32x32.png" />
+    <link rel="icon" type='image/png' sizes="16x16" href="./dist/icons/favicon-16x16.png" />
+    <link rel="manifest" href="./dist/manifest.json" />
+    <title>Home | Daniel Fedoskov | Chappic</title>
+    <meta name="description"
+        content="Hello, friend. My name is Daniel Fedoskov, sometimes they call me Chappic, and I am a web developer. Welcome to my website!" />
+    <meta property="og:title" content="Chappic's (Daniel Fedoskov) personal website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.danielfedoskov.ru/" />
+    <meta property="og:image" content="./dist/images/sections/about/first-image.jpg" />
+    <meta property="og:description"
+        content="Hello, friend. My name is Daniel Fedoskov, sometimes they call me Chappic, and I am a web developer. Welcome to my website!" />
+    <meta property="og:site_name"
+        content="Chappic's (Daniel Fedoskov) personal website, where you can learn a lot about his professional skills, portfolio and much more." />
+    <meta name="theme-color" content="#000000" />
+    <meta name="background-color" content="#FFFFFF" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/styles/styles.css">
+    <link rel="stylesheet" href="./dist/styles/home/home.css">
+    <link rel="stylesheet" href="./dist/styles/home/home.media.css">
+</head>
+
+<body style="overflow-x: hidden">
+    <div id="cursor"></div>
+    <div id="aura"></div>
+    <div class="pre-loader">
+        <div class="pre-loader-container">
+            <div class="pre-loader-header">
+                <div class="header concat">
+                    <h1>A creator of</h1>
+                    <div class="header-wrapper"></div>
+                </div>
+                <div class="header">
+                    <h1 data-text="platforms">platforms</h1>
+                    <div class="header-wrapper"></div>
+                </div>
+                <div class="header">
+                    <h1>From dirty</h1>
+                    <div class="header-wrapper"></div>
+                </div>
+                <div class="header">
+                    <h1>code of project</h1>
+                    <div class="header-wrapper"></div>
+                </div>
+                <div class="header">
+                    <h1>to clean</h1>
+
+                    <div class="header-wrapper"></div>
+                </div>
+                <div class="header">
+                    <h1 data-text="symphony">symphony</h1>
+                    <div class="header-wrapper"></div>
+                </div>
+            </div>
+            <div class="pre-loader-btn" onclick="revealSite()">
+                <div class="btn">
+                    Click anywhere
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 10">
+                        <defs></defs>
+                        <path fill="#e2e2dd" d="M59.2,9.6V6.2h-58v-2c0,0,0,0,0,0h58V0.7L67,5.1L59.2,9.6z"></path>
+                    </svg>
+                    to enable the code
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar__site-logo hover-place">FD|C</div>
+            <div class="navbar__menu-toggle hover-place">
+                <div id="navbar__menu-toggle__btn">
+                    <span class="navbar__menu-toggle__btn__class"></span>
+                </div>
+            </div>
+        </div>
+        <div class="nav__container">
+            <div class="nav">
+                <div class="col flex">
+                    <div class="nav__logo nav__box-lines">
+                        <p id="nav__logo-id"></p>
+                    </div>
+                    <div class="nav__socials nav__box-lines">
+                        <div class="nav__socials-container">
+                            <a href="https://vk.com/chappic2021" target="_blank">VKontakte</a>
+                            <a href="https://instagram.com/chappic2020" target="_blank">Instagram</a>
+                            <a href="https://t.me/RobotChappi2020" target="_blank">Telegram</a>
+                            <a href="https://github.com/robot-chappi" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col nav__box-lines">
+                    <nav id='nav__box-lines-1'>
+                        <div class="nav__box-lines__link">
+                            <a href="#home" class="btn-flip" data-back="/go" data-front="/home"></a>
+                        </div>
+                        <div class="nav__box-lines__link">
+                            <a href="#about" class="btn-flip" data-back="/go" data-front="/about"></a>
+                        </div>
+                        <div class="nav__box-lines__link">
+                            <a href="#quality" class="btn-flip" data-back="/go" data-front="/quality"></a>
+                        </div>
+                        <div class="nav__box-lines__link">
+                            <a href="#works" class="btn-flip" data-back="/go" data-front="/works"></a>
+                        </div>
+                        <div class="nav__box-lines__link">
+                            <a href="#services" class="btn-flip" data-back="/go" data-front="/services"></a>
+                        </div>
+                        <div class="nav__box-lines__link">
+                            <a href="#contact" class="btn-flip" data-back="/go" data-front="/contact"></a>
+                        </div>
+                    </nav>
+                    <nav id='nav__box-lines-2' class='display-none'>
+                        <div class="active nav__box-lines__link">
+                            <a href="index.html" class="btn-flip" data-back="/go" data-front="/home"></a>
+                        </div>
+                        <div class="nav__box-lines__link">
+                            <a href="gallery.html" class="btn-flip" data-back="/go" data-front="/gallery"></a>
+                        </div>
+                    </nav>
+                    <label class="nav__box-lines__link_button-container">
+                        <button type='submit' id="nav__box-lines__link_button"
+                            class="nav__box-lines__link_button">Change links</button>
+                    </label>
+                </div>
+            </div>
+            <div class="nav__footer">
+                <div class="nav__links">
+                    <div class="nav__links-container">
+                        <a href="404.html">Privacy policy</a>
+                        <a href="404.html">Cookie policy</a>
+                        <a href="404.html">Terms & Conditions</a>
+                    </div>
+                </div>
+                <div class="contact">
+                    <a href="mailto:chappiccat@gmail.com">chappiccat@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="qr-code__container">
+            <div class="nav">
+                <div class="col">
+                    <div class="qr-code-svg">
+                        <div class="qr-code-svg__wrapper">
+                            <img class="hover-place" id="qr-code-img" src="./dist/images/qr-code.svg" alt="qr-code">
+                            <label for="qr-code-img">qr code to freelance</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="close-qr-code__container">
+                <button class='qr-code-btn-class glowing-btn'><span class='glowing-txt'>c<span
+                            class='faulty-letter'>l</span>ose</span></button>
+            </div>
+        </div>
+
+        <div class="chat">
+            <div class="chat__window">
+                <div class="chat__wrapper">
+                    <img id="chat-image-1" src="./dist/images/sections/navbar/home.png" alt="chat"
+                        class="chat-image chat-image-opacity">
+                    <img id="chat-image-2" src="./dist/images/sections/navbar/about.png" alt="chat" class="chat-image">
+                    <img id="chat-image-3" src="./dist/images/sections/navbar/qualities.png" alt="chat"
+                        class="chat-image">
+                    <img id="chat-image-4" src="./dist/images/sections/navbar/works.png" alt="chat" class="chat-image">
+                    <img id="chat-image-5" src="./dist/images/sections/navbar/contact.png" alt="chat"
+                        class="chat-image">
+                    <img id="chat-image-6" src="./dist/images/sections/navbar/end.png" alt="chat" class="chat-image">
+                    <img id="chat-image-7" src="./dist/images/sections/navbar/qr-code.png" alt="chat"
+                        class="chat-image">
+                    <div class="chat__wrapper-message">
+                        <div class="avatar">
+                            <img id="avatar-1" class="img-active" src="./dist/images/sections/chat/avatar-unknown.jpg"
+                                alt="avatar">
+                            <img id="avatar-2" src="./dist/images/sections/chat/avatar.jpg" alt="avatar">
+                        </div>
+                        <label class="chat-label">
+                            <span id="message-1" class="chat-text active glitch layers"
+                                data-text="嗨，你好吗？我现在是你的向导了! 顺便问一下，到目前为止你喜欢这个网站吗？你喜欢它吗？">Hi! How are you? I'll be your
+                                guide now! By the way, how do you like the site so far? Do you like it?</span>
+                            <span id="message-2" class="chat-text glitch layers"
+                                data-text="顺便说一下，是我，Daniel，很高兴见到你! 这是关于我作为一个程序员的故事 :D">It's me by the way, Daniel, nice
+                                to meet you! It's about me as a programmer :D</span>
+                            <span id="message-3" class="chat-text glitch layers"
+                                data-text="而在这里，关于我这个想了解每个领域的普通人，哈哈。">And here about me as a regular guy who wants to
+                                know every area haha.</span>
+                            <span id="message-4" class="chat-text glitch layers"
+                                data-text="下面是一个美丽的动画，你觉得怎么样？这些都是我的素质。">Below is a beautiful animation, what do you
+                                think? These are all my quality.</span>
+                            <span id="message-5" class="chat-text glitch layers"
+                                data-text="接下来是我的作品集，这里没有列出我的所有作品，但你可以在GitHub上看到所有作品。">Now my portfolio is next, not all
+                                my work is listed here, but you can see it all on GitHub.</span>
+                            <span id="message-6" class="chat-text glitch layers" data-text="我一直在努力工作和学习，并将继续这样做。">I have
+                                worked and studied hard and will continue to do it.</span>
+                            <span id="message-7" class="chat-text glitch layers" data-text="所以，希望你喜欢这个，让我们继续讨论我的技能。">So,
+                                hope you enjoyed that, let's move on to my skills.</span>
+                            <span id="message-8" class="chat-text glitch layers" data-text="这个名单相当长，但它会一直增长，你可以看着它。">The
+                                list is quite long, but it will grow all the time and you can watch it.</span>
+                            <span id="message-9" class="chat-text glitch layers"
+                                data-text="所以，希望你喜欢这个，让我们继续交流......">So, hope you enjoyed that, let's move on to
+                                communication...</span>
+                            <span id="message-10" class="chat-text glitch layers"
+                                data-text="在这里，如果你有任何建议或订单，你可以联系我。">Here you can contact me if you have any suggestions
+                                or orders.</span>
+                            <span id="message-11" class="chat-text glitch layers"
+                                data-text="所以，就这样了。我希望你喜欢这个伴奏! 我祝愿你一切顺利">So, that's it. I hope you enjoyed this
+                                accompaniment! I wish you every success!</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="website__content">
+            <header id="home">
+                <div class="central__content">
+                    <div class="central__content__text hover-container">
+                        <div id="name__1">
+                            <label class="hero-text-about glitch layers" data-text="欢迎来到我这里!">
+                                <label>F</label><label>e</label><label>d</label><label
+                                    class="hover-place-header">o</label><label
+                                    class="hover-place-header">s</label><label
+                                    class="hover-place-header">k</label><label
+                                    class="hover-place-header">o</label><label class="hover-place-header">v</label>
+                            </label>
+                        </div>
+                        <div id="name__2" class="hover-container-item">
+                            <p>Daniel</p>
+                            <img src="./dist/images/hover/hover-1.jpg" alt="hover-image">
+                        </div>
+                        <div id="name__3">
+                            <label class="hero-text-about glitch layers" data-text="你怎么看？">
+                                <label class="hover-place-header">W</label><label
+                                    class="hover-place-header">e</label><label
+                                    class="hover-place-header">b</label><label>D</label><label>e</label><label>v</label><label
+                                    class="hover-place-header">e</label><label
+                                    class="hover-place-header">l</label><label
+                                    class="hover-place-header">o</label><label
+                                    class="hover-place-header">p</label><label
+                                    class="hover-place-header">e</label><label class="hover-place-header">r</label>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="central__content__images">
+                        <img src="./dist/images/svg/sphere.svg" alt="svg">
+                    </div>
+                </div>
+                <div class="footer__content">
+                    <div class="social-links__container">
+                        <div id="social-links__wrapper__1" class="social-links__wrapper">
+                            <a href="https://t.me/RobotChappi2020" target="_blank">telegram</a>
+                            <img src="./dist/images/sections/about/about_1.png" alt="hover-image"
+                                class="social-links__img">
+                        </div>
+                        <div id="social-links__wrapper__2" class="social-links__wrapper">
+                            <a href="https://instagram.com/chappic2020" target="_blank">instagram</a>
+                            <img src="./dist/images/sections/about/about_2.png" alt="hover-image"
+                                class="social-links__img">
+                        </div>
+                        <div id="social-links__wrapper__3" class="social-links__wrapper">
+                            <a href="https://github.com/robot-chappi" target="_blank">github</a>
+                            <img src="./dist/images/sections/about/about_3.png" alt="hover-image"
+                                class="social-links__img">
+                        </div>
+                    </div>
+
+                    <div class="scroll-down">
+                        <div class="scroll-down__wrapper hover-place">
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <div class="qr-code">
+                        <div class="hover-place">
+                            <span class="qr-code-btn-class">
+                                <label class="hero-text-black glitch layers" data-text="qr-code">QR-code</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="marquee hover-place">
+                    <span>
+                        &nbsp; discuss your ideas &nbsp; / &nbsp; unexpected time &nbsp; / &nbsp; spatial experiences
+                        &nbsp; / &nbsp; best specialists &nbsp; / &nbsp; impulse &nbsp; / &nbsp; independent online
+                        store &nbsp; / &nbsp; you can't download the experience &nbsp;
+                    </span>
+                </div>
+            </header>
+            <main>
+                <section id="about" class="about">
+                    <div id="about__wrapper__1" class="about__wrapper">
+                        <div class="about__img">
+                            <img src="./dist/images/sections/about/first-image.jpg" alt="Daniel Fedoskov">
+                        </div>
+                        <div class="about__txt">
+                            <h2 class="h2__title">
+                                <div class="h2__title__hover-container">
+                                    <p>abo<span class="stroke">ut</span> me</p>
+                                    <img src="./dist/images/hover/hover-1.jpg" alt="hover-image">
+                                </div>
+                                <span class="h2__title__container__square"></span>
+                            </h2>
+                            <p class="about__p">
+                                I'm a <b class="about__p__b">fullstack developer</b> with<label
+                                    class="hero inactive-glitch inactive-layers" data-text="你在看这个吗？"><span>three
+                                        years</span></label>of experience.
+                                I've also been doing <b class="about__p__b">web design</b> for more than one year, and
+                                I'm also an <b class="about__p__b">artist</b> with little experience. I also speak
+                                <label class="hero inactive-glitch inactive-layers" data-text="你在看这个吗？"><span>two
+                                        languages</span></label>at a good level - <b class="about__p__b">English</b> and
+                                <b class="about__p__b">Russian</b>.
+                                <label class="hero inactive-glitch inactive-layers" data-text="祝您好运"><span>I'm
+                                        currently</span></label>studying <b class="about__p__b">Chinese</b>
+                                and <b class="about__p__b">German</b>.
+                                <br>
+                                I am very familiar with using frameworks like <b class="about__p__b">React</b>,
+                                <b class="about__p__b">Next</b>, <b class="about__p__b">Laravel</b>, <b
+                                    class="about__p__b">Gatsby</b>, <b class="about__p__b">Three JS</b>,
+                                <b class="about__p__b">Nest JS</b>, <b class="about__p__b">Node JS</b> and others.
+                                Focusing on
+                                <b class="about__p__b">"progressive enhancement"</b>, I'm looking for creative ways to
+                                expand the boundaries of the website interface code
+                                <label class="hero inactive-glitch inactive-layers" data-text="你在做什么？"><span>without
+                                        compromising</span></label>browser
+                                support and performance. I also write
+                                websites using everyone's favorite <b class="about__p__b">HTML5</b>, <b
+                                    class="about__p__b">CSS
+                                    (SASS)</b>,
+                                <b class="about__p__b">JS</b>, <b class="about__p__b">PHP</b>, <b
+                                    class="about__p__b">Python</b>
+                                <label class="hero inactive-glitch inactive-layers"
+                                    data-text="继续前进"><span>languages.</span></label>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="about__wrapper__2" class="about__wrapper">
+                        <div class="about__txt-left">
+                            <h2 class="h2__title">
+                                <div class="h2__title__hover-container-left">
+                                    <p>other<span class="stroke">things</span></p>
+                                    <img src="./dist/images/hover/hover-2.jpg" alt="hover-image">
+                                </div>
+                                <span class="h2__title__container__square"></span>
+                            </h2>
+                            <p class="about__p">
+                                At the<label class="hero inactive-glitch inactive-layers" data-text="继续"><span>age of
+                                        6-7</span></label>, I started going to <b class="about__p__b">art school</b> for
+                                ballroom dancing classes. I have been dancing for
+                                <b class="about__p__b">6 years</b> and have reached the <b class="about__p__b">"E"</b>
+                                level. At
+                                the
+                                age of <b class="about__p__b">12-13</b>, <label
+                                    class="hero inactive-glitch inactive-layers" data-text="你怎么看？"><span>I finished
+                                        doing</span></label>this,
+                                because this direction
+                                no longer attracted me, and then I started <b class="about__p__b">programming</b>. At
+                                the <label class="hero inactive-glitch inactive-layers" data-text="你喜欢我吗？"><span>age of
+                                        10,</span></label>I decided to go to <b class="about__p__b">music school</b>
+                                because I
+                                really wanted to learn how to play a musical instrument. <label
+                                    class="hero inactive-glitch inactive-layers" data-text="很多的问题。"><span>My choice
+                                        fell</span></label>
+                                on the <b class="about__p__b">guitar</b>. I've been doing music for 5 years and
+                                I've<b class="about__p__b">finished</b>music school.
+                                <br>
+                                I develop myself from a <b class="about__p__b">physical</b> point of view. I have been
+                                doing sports for <b class="about__p__b">5 years</b> and have<label
+                                    class="hero inactive-glitch inactive-layers" data-text="我明白了。"><span>good
+                                        results</span></label>in
+                                this. I
+                                started doing this because I knew it would <b class="about__p__b">strengthen</b> me,
+                                give me more <b class="about__p__b">motivation</b> <label
+                                    class="hero inactive-glitch inactive-layers" data-text="好吧... "><span>not to give
+                                        up</span></label> and much more.
+                                <b class="about__p__b">Follow me on instagram</b> ;) I am also very interested in the
+                                future and the <b class="about__p__b">metaverse</b> at the moment. I ever made a
+                                <b class="about__p__b">3d model</b> of myself. I do a bit of <label
+                                    class="hero inactive-glitch inactive-layers" data-text="有个愉快的一天!"><span>3D
+                                        modeling</span></label> and I do it
+                                exclusively <b class="about__p__b">for myself</b>.
+                            </p>
+                        </div>
+                        <div class="about__img-right">
+                            <img src="./dist/images/sections/about/second-image.jpg" alt="Daniel Fedoskov">
+                        </div>
+                    </div>
+                </section>
+                <section id="quality" class="quality">
+                    <div class="content">
+                        <h2 id="quality__h2-id" class="h2__title">
+                            <div class="h2__title__container">
+                                <p>сharacter<span class="stroke">istics</span></p>
+                                <img src="./dist/images/sections/characteristics/characteristics-1.jpg"
+                                    alt="hover-image">
+                            </div>
+                            <span class="h2__title__container__square"></span>
+                        </h2>
+
+                        <ul class="quality__wrapper">
+                            <li class="quality__item">
+                                <span id="quality__num_1" class="quality__num" data-speed="-200">
+                                    <p id="quality__title_1" class="quality__title">/01</p>
+                                    <img src="./dist/images/sections/characteristics/characteristics-7.jpg"
+                                        alt="hover-image">
+                                </span>
+                                <p id="quality__p_1" class="quality__p"><b class="quality__b">Time:</b><br><span
+                                        class="hero inactive-glitch inactive-layers" data-text="小行情"><span>Minimum
+                                            questions, maximum results.</span></span>
+                                </p>
+                            </li>
+                            <li class="quality__item">
+                                <span id="quality__num_2" class="quality__num" data-speed="-150">
+                                    <p id="quality__title_2" class="quality__title">/02</p>
+                                    <img src="./dist/images/sections/characteristics/characteristics-6.jpg"
+                                        alt="hover-image">
+                                </span>
+                                <p id="quality__p_2" class="quality__p"><b class="quality__b">Project
+                                        warranty:</b><br><span class="hero inactive-glitch inactive-layers"
+                                        data-text="心如止水，静待花开。"><span>I make all kinds of edits for free.</span></span>
+                                </p>
+                            </li>
+                            <li class="quality__item">
+                                <span id="quality__num_3" class="quality__num" data-speed="-150">
+                                    <p id="quality__title_3" class="quality__title">/03</p>
+                                    <img src="./dist/images/sections/characteristics/characteristics-5.jpg"
+                                        alt="hover-image">
+                                </span>
+                                <p id="quality__p_3" class="quality__p"><b class="quality__b">Flexibility:</b><br><span
+                                        class="hero inactive-glitch inactive-layers"
+                                        data-text="落花有意，流水无情。"><span>Flexible work schedule and communication with the
+                                            customer.</span></span>
+                                </p>
+                            </li>
+                            <li class="quality__item">
+                                <span id="quality__num_4" class="quality__num" data-speed="-150">
+                                    <p id="quality__title_4" class="quality__title">/04</p>
+                                    <img src="./dist/images/sections/characteristics/characteristics-4.jpg"
+                                        alt="hover-image">
+                                </span>
+                                <p id="quality__p_4" class="quality__p"><b
+                                        class="quality__b">Self-discipline:</b><br><span
+                                        class="hero inactive-glitch inactive-layers" data-text="一片云彩也能惊喜天空。"><span>I
+                                            manage my time and work alone.</span></span>
+                                </p>
+                            </li>
+                            <li class="quality__item">
+                                <span id="quality__num_5" class="quality__num" data-speed="-110">
+                                    <p id="quality__title_5" class="quality__title">/05</p>
+                                    <img src="./dist/images/sections/characteristics/characteristics-2.jpg"
+                                        alt="hover-image">
+                                </span>
+                                <p id="quality__p_5" class="quality__p"><b class="quality__b">Communication
+                                        skills:</b><br><span class="hero inactive-glitch inactive-layers"
+                                        data-text="听取岁月的话语，获得自由的心灵。"><span>They have the opportunity to call by video
+                                            and not only to discuss cases.</span></span>
+                                </p>
+                            </li>
+                            <li class="quality__item">
+                                <span id="quality__num_6" class="quality__num" data-speed="-200">
+                                    <p id="quality__title_6" class="quality__title">/06</p>
+                                    <img src="./dist/images/sections/characteristics/characteristics-1.jpg"
+                                        alt="hover-image">
+                                </span>
+                                <p id="quality__p_6" class="quality__p"><b class="quality__b">Forever
+                                        learning:</b><br><span class="hero inactive-glitch inactive-layers"
+                                        data-text="百年修得同船渡，千年修得共枕眠。"><span>Always ready to learn something new and
+                                            interesting.</span></span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="works" class="work">
+                    <div class="content">
+                        <h2 id="work__h2-id" class="h2__title">
+                            <div class="h2__title__container">
+                                <p>port<span class="stroke">folio</span></p>
+                                <img src="./dist/images/sections/characteristics/characteristics-3.jpg"
+                                    alt="hover-image">
+                            </div>
+                            <span class="h2__title__container__square"></span>
+                        </h2>
+                    </div>
+
+                    <div class="work__wrapper">
+                        <div id="work__item_1" class="work__item" data-speed="-300">
+                            <span class="work__item-num" data-speed="-500">/001</span>
+                            <div class="work__item-txt" data-speed="-1000">
+                                <div class="work__item-txt_title" data-speed="-150">
+                                    <p class="work__item-txt_title-p">mac <span class="text-stroke">ode</span></p>
+                                    <img src="./dist/images/sections/characteristics/characteristics-10.jpeg"
+                                        alt="hover-image">
+                                </div>
+                                <p class="work__item-txt_text">
+                                    <label class="hero-text glitch layers"
+                                        data-text="个人网站 'Macode' 是一个开发者销售其开发服务的个人登陆网站的例子。"><span>Personal website
+                                            "Macode" is an example of a developer's personal landing site for selling
+                                            their development services.</span></label>
+                                </p>
+                                <div class="work__item-txt_button-container">
+                                    <a href="https://freelance.ru/chappic/macode-personalny-sajt-4323930.html"
+                                        target="_blank" class="work__item-txt_button">View</a>
+                                </div>
+                            </div>
+                            <div class="work__item-img">
+                                <img src="./dist/images/sections/works/item-1.png" alt="my project">
+                            </div>
+                        </div>
+                        <div id="work__item_2" class="work__item" data-speed="-600">
+                            <span class="work__item-num" data-speed="-500">/002</span>
+                            <div class="work__item-txt" data-speed="-1000">
+                                <div class="work__item-txt_title" data-speed="-150">
+                                    <p class="work__item-txt_title-p">ucard <span class="text-stroke">neo</span></p>
+                                    <img src="./dist/images/sections/characteristics/characteristics-9.jpeg"
+                                        alt="hover-image">
+                                </div>
+                                <p class="work__item-txt_text">
+                                    <label class="hero-text glitch layers"
+                                        data-text="网站 'uCard neo '是一个具有理想的互动银行卡广告的银行页面的例子。"><span>Website "uCard neo" is
+                                            an example of a page for banks with an ideal interactive bank card
+                                            advertisement.</span></label>
+                                </p>
+                                <div class="work__item-txt_button-container">
+                                    <a href="https://freelance.ru/chappic/ucard-neo-unikalny-sajt-bankovskoj-karti-4316286.html"
+                                        target="_blank" class="work__item-txt_button">View</a>
+                                </div>
+                            </div>
+                            <div class="work__item-img">
+                                <img src="./dist/images/sections/works/item-2.png" alt="my project">
+                            </div>
+                        </div>
+                        <div id="work__item_3" class="work__item" data-speed="-700">
+                            <span class="work__item-num" data-speed="-700">/003</span>
+                            <div class="work__item-txt" data-speed="-2000">
+                                <div class="work__item-txt_title" data-speed="-150">
+                                    <p class="work__item-txt_title-p">mi<span class="text-stroke">ami</span></p>
+                                    <img src="./dist/images/sections/characteristics/characteristics-8.jpeg"
+                                        alt="hover-image">
+                                </div>
+                                <p class="work__item-txt_text">
+                                    <label class="hero-text glitch layers"
+                                        data-text="网站 'Miami '是最好的例子之一，其主要任务是以有趣的形式向访客展示大量的图片。"><span>Website "Miami" is
+                                            one of the best examples of sites whose main task is to show the visitor a
+                                            large number of images in an interesting form.</span></label>
+                                </p>
+                                <div class="work__item-txt_button-container">
+                                    <a href="https://freelance.ru/chappic/miami-unikalny-sajt-galereya-4316276.html"
+                                        target="_blank" class="work__item-txt_button">View</a>
+                                </div>
+                            </div>
+                            <div class="work__item-img">
+                                <img src="./dist/images/sections/works/item-3.png" alt="my project">
+                            </div>
+                        </div>
+                        <div id="work__item_4" class="work__item" data-speed="-400">
+                            <span class="work__item-num" data-speed="-200">/004</span>
+                            <div class="work__item-txt" data-speed="-1500">
+                                <div class="work__item-txt_title" data-speed="-150">
+                                    <p class="work__item-txt_title-p">anime <span class="text-stroke">store</span></p>
+                                    <img src="./dist/images/sections/characteristics/characteristics-3.jpg"
+                                        alt="hover-image">
+                                </div>
+                                <p class="work__item-txt_text">
+                                    <label class="hero-text glitch layers"
+                                        data-text="'AnimeStore '是一个网站，为真正的动漫迷实现了整个社交网络、网上商店和更多的东西。"><span>"AnimeStore"
+                                            is a website that implements a whole social network, an online store and
+                                            much more for true anime fans.</span></label>
+                                </p>
+                                <div class="work__item-txt_button-container">
+                                    <a href="https://freelance.ru/chappic/internet-magazin-i-anime-soobshestvo-anime-store-4304113.html"
+                                        target="_blank" class="work__item-txt_button">View</a>
+                                </div>
+                            </div>
+                            <div class="work__item-img">
+                                <img src="./dist/images/sections/works/item-4.png" alt="my project">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work__footer">
+                        <div class="marquee">
+                            <span>
+                                000011100010111000101111000011100010111100011001000011100010111000100001000011100010111000011011000011100010111000011110000011100010111100011011
+                            </span>
+                        </div>
+                        <div class="work__footer__button-container">
+                            <a href="https://freelance.ru/chappic" target="_blank" class="work__footer__button">View
+                                other
+                                works</a>
+                        </div>
+                    </div>
+                </section>
+                <section id="services" class="service">
+                    <div class="content">
+                        <h2 id="service__h2-id" class="h2__title">
+                            <div class="h2__title__container">
+                                <p>servic<span class="stroke">es</span></p>
+                                <img src="./dist/images/sections/skills/skills_1.jpeg" alt="hover-image">
+                            </div>
+                            <span class="h2__title__container__square"></span>
+                        </h2>
+
+                        <div class="service__wrapper">
+                            <div id="service__item-container_1" class="service__item">
+                                <span class="service__item-arrow" data-speed="500">
+                                    <img src="./dist/images/arrow-transparent.svg" alt="arrow">
+                                </span>
+                                <div class="service__item-txt">
+                                    <span class="service__item-container" data-speed="-110">
+                                        <p id="service__item-text_1" class="service__item-text">/App <span
+                                                class="service__item-container_stroke">Dev</span></p>
+                                        <img src="./dist/images/sections/skills/skills_2.png" alt="hover-image">
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="service__item-container_2" class="service__item">
+                                <span class="service__item-arrow" data-speed="400">
+                                    <img src="./dist/images/arrow.svg" alt="arrow">
+                                </span>
+                                <div class="service__item-txt">
+                                    <span class="service__item-container" data-speed="-110">
+                                        <p id="service__item-text_2" class="service__item-text">/UX/UI <span
+                                                class="service__item-container_stroke">Design</span></p>
+                                        <img src="./dist/images/sections/skills/skills_1.jpeg" alt="hover-image">
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="service__item-container_3" class="service__item">
+                                <span class="service__item-arrow" data-speed="800">
+                                    <img src="./dist/images/arrow-transparent.svg" alt="arrow">
+                                </span>
+                                <div class="service__item-txt">
+                                    <span class="service__item-container" data-speed="-110">
+                                        <p id="service__item-text_3" class="service__item-text">/Web <span
+                                                class="service__item-container_stroke">Design</span></p>
+                                        <img src="./dist/images/sections/skills/skills_3.png" alt="hover-image">
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="service__item-container_4" class="service__item">
+                                <span class="service__item-arrow" data-speed="600">
+                                    <img src="./dist/images/arrow.svg" alt="arrow">
+                                </span>
+                                <div class="service__item-txt">
+                                    <span class="service__item-container" data-speed="-110">
+                                        <p id="service__item-text_4" class="service__item-text">/Brend <span
+                                                class="service__item-container_stroke">Design</span></p>
+                                        <img src="./dist/images/sections/skills/skills_4.png" alt="hover-image">
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="service__item-container_5" class="service__item">
+                                <span class="service__item-arrow" data-speed="1000">
+                                    <img src="./dist/images/arrow-transparent.svg" alt="arrow">
+                                </span>
+                                <div class="service__item-txt">
+                                    <span class="service__item-container" data-speed="-110">
+                                        <p id="service__item-text_5" class="service__item-text">/Fullstack <span
+                                                class="service__item-container_stroke">Dev</span></p>
+                                        <img src="./dist/images/sections/skills/skills_5.png" alt="hover-image">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact" class="contact">
+                    <div class="content">
+                        <h2 id="contact__h2-id" class="h2__title">
+                            <div class="h2__title__container">
+                                <p>cont<span class="stroke">act</span></p>
+                                <img src="./dist/images/sections/contact/contact__1.jpeg" alt="hover-image">
+                            </div>
+                            <span class="h2__title__container__square"></span>
+                        </h2>
+                        <div class="contact__wrapper">
+                            <div class="contact__containers">
+                                <div class="contact__container_1">
+                                    <div class="contact__content">
+                                        <span class="contact__title">
+                                            <h1>
+                                                <label class="hero-text_h glitch layers" data-text="就这样了。">Do you
+                                                    have</label> a que<span class="text-stroke-dark">stion,</span><br />
+                                                an <span class="text-stroke-dark">idea,</span> or a <span
+                                                    class="text-stroke-dark">project</span> you <br />
+                                                <label class="hero-text_h glitch layers" data-text="问我一些问题">need help
+                                                    with?</label> <br />
+                                                <span class="text-stroke-dark">Contact Me!</span>
+                                            </h1>
+                                            <img src="./dist/images/sections/contact/contact__2.jpeg" alt="hover-image">
+                                        </span>
+                                    </div>
+                                    <div class="contact__social-links">
+                                        <div class="contact__row_1">
+                                            <a href="https://www.danielfedoskov.ru/" target="_blank">
+                                                <span class="contact__a-text">https://www.danielfedoskov.ru/</span>
+                                                <div class="contact__a-container">
+                                                    <div class="contact__a-container-content">
+                                                        <span>go</span>
+                                                        <i class="fa-solid fa-person-running"></i>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a>
+                                                <span class="contact__a-text">+X (XXX) XXX-XX-XX</span>
+                                                <div class="contact__a-container">
+                                                    <div class="contact__a-container-content">
+                                                        <span>call</span>
+                                                        <i class="fa-solid fa-phone"></i>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="contact__row_2">
+                                            <div>vk</div>
+                                            <div>instagram</div>
+                                            <div>github</div>
+                                        </div>
+                                    </div>
+                                    <div class="contact__form">
+                                        <img src="./dist/images/circle.svg" alt="" />
+                                        <span>
+                                            <ion-icon name="arrow-down-outline"></ion-icon>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="contact__container_2">
+                                    <div class="inputboxes">
+                                        <div class="contact__row_1">
+                                            <div>
+                                                <input id="contact__input-element__name" class="contact__input-element"
+                                                    type="text" placeholder="Name">
+                                                <label id="contact__input-label__name"
+                                                    class="contact__input-label close">The name should be in this
+                                                    format: John Doe</label>
+                                            </div>
+                                            <div>
+                                                <input id="contact__input-element__email" class="contact__input-element"
+                                                    placeholder="E-mail" type="text" />
+                                                <label id="contact__input-label__email"
+                                                    class="contact__input-label close">The mail should be in this
+                                                    format: example@mail.com</label>
+                                            </div>
+                                            <div>
+                                                <input id="contact__input-element__subject"
+                                                    class="contact__input-element" placeholder="Subject" type="text" />
+                                                <label id="contact__input-label__subject"
+                                                    class="contact__input-label close">The subject must be at least 5
+                                                    characters long</label>
+                                            </div>
+                                        </div>
+                                        <div class="contact__row_2">
+                                            <div class="contact__textarea">
+                                                <textarea id="contact__textarea-element__message"
+                                                    class="contact__textarea-element" placeholder="Message"></textarea>
+                                                <label id="contact__textarea-label__message"
+                                                    class="contact__textarea-label close"><span>Your message must be at
+                                                        least 30 characters long</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="contact__submitbtn">
+                                        <ion-icon name="send-outline"></ion-icon>
+                                        <h1>Submit</h1>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer id="end" class="footer">
+                    <div class="footer__container hero-text glitch layers" data-text="祝你有个愉快的一天，嘿嘿">
+                        <div>
+                            <span data-speed="-300">c</span>
+                            <span data-speed="100">h</span>
+                            <span data-speed="300">a</span>
+                            <span data-speed="-300">p</span>
+                            <span data-speed="350">p</span>
+                            <span data-speed="200">i</span>
+                            <span data-speed="-310">c</span>
+                        </div>
+                        <div>
+                            <span data-speed="200"><span class="text-stroke-dark">c</span></span>
+                            <span data-speed="-340"><span class="text-stroke-dark">o</span></span>
+                            <span data-speed="-100"><span class="text-stroke-dark">d</span></span>
+                            <span data-speed="300"><span class="text-stroke-dark">e</span></span>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+        <div class="texture"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/theaterjs/dist/theater.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./dist/scripts/main.js"></script>
+    <script src="./dist/scripts/home/home.js"></script>
+    <script src="./dist/scripts/contact-form/form.js"></script>
+</body>
+
+</html>

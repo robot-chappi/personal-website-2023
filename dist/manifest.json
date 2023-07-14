@@ -1,0 +1,29 @@
+{
+	"theme_color": "#000000",
+	"background_color": "#FFFFFF",
+	"scope": "/",
+	"start_url": "/",
+	"name": "Personal Website of Daniel Fedoskov | Chappic",
+	"app_name": "Personal Website of Daniel Fedoskov | Chappic",
+	"short_name": "Daniel Fedoskov",
+	"description": "Chappic's (Daniel Fedoskov) personal website, where you can learn a lot about his professional skills, portfolio and much more.",
+	"icons": [
+		{
+			"src": "./icons/maskable_icon.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "./icons/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "./icons/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"display": "fullscreen"
+}
